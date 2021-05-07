@@ -26,56 +26,84 @@
       <h2>
         Study
       </h2>
-      <p>
-        The study does not take in the results in the current version.
-      </p>
-      <p>
-        What is your favourite Sabaton song?
-      </p>
-      <input type='text' value=''>
-      <p>
-        Which of these songs are you familiar with?
-      </p>
-      <p>
-        winged hussars
-      </p>
-      <input type='checkbox'><br>
-      <p>
-        hearts of iron
-      </p>
-      <input type='checkbox'><br>
-      <p>
-        a lifetime of war
-      </p>
-      <input type='checkbox'><br>
-      <p>
-        en livstid i krig
-      </p>
-      <input type='checkbox'><br>
-      <p>
-        ruina imperii
-      </p>
-      <input type='checkbox'><br>
-      <p>
-        Are you a bot?
-      </p>
-      <P>
-        Yes
-      </P>
-      <input type="radio" name="bot" checked>
-      <p>
-        No
-      </p>
-      <input type="radio" name="notBot">
-      <p>
-        Write the password on the picture.
-      </p>
-      <input type='password' value=''>
-      <p>
-        Any coments on the study?
-      </p>
-      <textarea rows="10" cols="30"></textarea>
-      <button type='submit'>Submit</button>
+      <fieldset>
+        <legend>
+          The study does not take in the results in the current version.
+        </legend>
+        <label for="favourite">
+          What is your favourite Sabaton song?
+        </label>
+        <input type='text' value='' name="favourite">
+        <p>
+          Which of these songs are you familiar with?
+        </p>
+        <label for="wingedHussars">
+          winged hussars
+        </label>
+        <input type='checkbox' value="" name="wingedHussars"><br>
+        <label for="heartsOfIron">
+          hearts of iron
+        </label>
+        <input type='checkbox' value="" name="heartsOfIron"><br>
+        <label for="aLifetimeOfẂar">
+          a lifetime of war
+        </label>
+        <input type='checkbox' value="" name="aLifetimeOfẂar"><br>
+        <label for="enLivstidIKrig">
+          en livstid i krig
+        </label>
+        <input type='checkbox' value="" name="enLivstidIKrig"><br>
+        <label for="ruinaImperii">
+          ruina imperii
+        </label>
+        <input type='checkbox' value="" name="ruinaImperii"><br>
+        <label for="potentialFake">
+          Wich one of those were made up and are not Sabaton songs?
+        </label><br>
+        <select name="potentialFake">
+          <option value="pf1">
+            winged hussars
+          </option>
+          <option value="pf2">
+            hearts of iron
+          </option>
+          <option value="pf3">
+            a lifetime of war
+          </option>
+          <option value="pf4">
+            en livstid i krig
+          </option>
+          <option value="pf5">
+            ruina imperii
+          </option>
+          <option value="pf6">
+            no one
+          </option>
+        </select><br>
+        <label for="">
+          Are you a bot?
+        </label><br>
+        <label for="bot">
+          Yes
+        </label>
+        <input type='radio' name="bot" checked><br>
+        <label for="notBot">
+          No
+        </label>
+        <input type='radio' name="notBot"><br>
+        <label for="numberCheck">
+          Write the password on the picture.
+        </label><br>
+        <input type='password' value='' name="numberCheck"><br>
+        <label for="coments">
+          Any coments on the study?
+        </label><br>
+        <textarea rows="12" cols="20" value="" name="coments"></textarea><br>
+        <label for="">
+          Please check your answers before submiting.
+        </label><br>
+        <button type='submit'>Submit</button>
+      </fieldset>
     <footer>
       made by Elias Olofsson
     </footer>
