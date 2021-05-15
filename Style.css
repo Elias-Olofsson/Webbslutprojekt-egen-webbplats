@@ -1,3 +1,84 @@
 body{
+  display: grid;
+  grid-template-rows: 50px 50px auto 18px;
+  grid-gap: 0;
+  padding: 0;
+  grid-template-areas: "header" "nav" "main" "footer";
+}
+header{
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-area: header;
+  text-align: center;
+}
+nav{
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-area: nav;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
+main{
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-area: main;
+  grid-template-columns: 1fr 1fr;
+}
+@font-face {
+  font-family: FooterFont;
+  src: url("acme.woff");
+}
+footer{
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-area: footer;
+  font-family: FooterFont;
+}
+h1{
+  margin: 0;
+  padding: 0;
+}
+h2{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+h3{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+table{
+  border: 1px solid black;
+  border-spacing: 0px;
+  border-radius: 15px;
+  padding: 5px;
+}
+th{
+  background-color: white;
+  border: 1px solid black;
+}
+td{
+  border: 1px solid black;
+  vertical-align: top;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+dl{
+  list-style-type: none;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
