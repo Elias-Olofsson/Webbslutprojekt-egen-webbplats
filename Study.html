@@ -1,62 +1,66 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
   <head>
 	  <meta charset="utf-8">
-	  <link href = "Style.css" rel = "stylesheet">
-	  <title>Study-Elias webbsite about Sabaton</title>
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link href = "Style.css" rel = "stylesheet"> <!--kopplar htmldokumentet med CSS:en-->
+	  <title>Study-Elias webbsite about Sabaton</title> <!--title gör så att texten står i fliken på sidan-->
+	  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--gör så att designen utgår från sidans storlek-->
     </head>
-  <body id="Study">
+  <body id="Study"> <!--id selektorn är gjord för att man ska kunna välja sidan man vill specielt designa i CSS:en-->
     <header>
-      <h1>
+      <h1> <!--huvudrubrik-->
         Elias webbsite about Sabaton
       </h1>
     </header>
+    <nav role="navigation"> <!--navigationsmeny med två listor med länkar till andra sidor och skriver ut deras namn-->
       <ul>
-        <nav>
-          <li><a href = "Index.html">Index</a></li>
-          <li><a href = "Bandmembers.html">Bandmembers</a></li>
-          <li><a href = "Music.html">Music</a></li>
-          <li><a href = "Study.html">Study</a></li>
-          <li><a href = "Results.html">Results</a></li>
-        </nav>
+        <li><a href = "Index.html">Index</a></li>
+        <li><a href = "Bandmembers.html">Bandmembers</a></li>
+        <li><a href = "Music.html">Music</a></li>
       </ul>
-      <main>
-        <fieldset>
-        <legend>
-          The study does not take in the results in the current version.
-        </legend>
-        <label for="favourite">
-          What is your favourite Sabaton song?
-        </label>
-        <input type='text' value='' name="favourite">
-        <p>
-          Which of these songs are you familiar with?
-        </p>
-        <label for="wingedHussars">
-          winged hussars
-        </label>
-        <input type='checkbox' value="" name="wingedHussars"><br>
-        <label for="heartsOfIron">
-          hearts of iron
-        </label>
-        <input type='checkbox' value="" name="heartsOfIron"><br>
-        <label for="aLifetimeOfẂar">
-          a lifetime of war
-        </label>
-        <input type='checkbox' value="" name="aLifetimeOfẂar"><br>
-        <label for="enLivstidIKrig">
-          en livstid i krig
-        </label>
-        <input type='checkbox' value="" name="enLivstidIKrig"><br>
-        <label for="ruinaImperii">
-          ruina imperii
-        </label>
-        <input type='checkbox' value="" name="ruinaImperii"><br>
-        <label for="potentialFake">
-          Wich one of those were made up and are not Sabaton songs?
-        </label><br>
-        <select name="potentialFake">
+      <ul>
+        <li><a href = "Study.html">Study</a></li>
+        <li><a href = "Results.html">Results</a></li>
+      </ul>
+    </nav>
+    <main role="main"> <!--själva innehållet på sidan-->
+      <form>
+       <fieldset>
+          <legend>
+            The study does not take in the results in the current version.
+          </legend>
+          <label for="favourite">
+            What is your favourite Sabaton song?
+          </label>
+          <input type='text' value='' name="favourite">
+          <p>
+            Which of these songs are you familiar with?
+          </p>
+          <label for="wingedHussars">
+            winged hussars
+          </label>
+          <input type='checkbox' value="" name="wingedHussars"><br>
+          <label for="heartsOfIron">
+            hearts of iron
+          </label>
+          <input type='checkbox' value="" name="heartsOfIron"><br>
+          <label for="aLifetimeOfẂar">
+            a lifetime of war
+          </label>
+          <input type='checkbox' value="" name="aLifetimeOfẂar"><br>
+          <label for="enLivstidIKrig">
+            en livstid i krig
+          </label>
+          <input type='checkbox' value="" name="enLivstidIKrig"><br>
+          <label for="ruinaImperii">
+            ruina imperii
+          </label>
+          <input type='checkbox' value="" name="ruinaImperii"><br>
+          <label for="potentialFake">
+            Wich one of those were made up and are not Sabaton songs?
+          </label><br>
+          <select name="potentialFake">
           <option value="pf1">
             winged hussars
           </option>
@@ -75,33 +79,34 @@
           <option value="pf6">
             no one
           </option>
-        </select><br>
-        <label for="">
-          Have you any knowledge about Sabaton?
-        </label><br>
-        <label for="hasKnowledge">
-          Yes
-        </label>
-        <input type='radio' name="hasKnowledge" checked><br>
-        <label for="hasMoreKnowledge">
-          Yes and not just any.
-        </label>
-        <input type='radio' name="hasMoreKnowledge"><br>
-        <label for="numberCheck">
-          Write the password on the picture.
-        </label><br>
-        <input type='password' value='' name="numberCheck"><br>
-        <label for="coments">
-          Any coments on the study?
-        </label><br>
-        <textarea rows="12" cols="20" value="" name="coments"></textarea><br>
-        <label for="submit">
-          Please check your answers before submiting.
-        </label><br>
-        <button type='submit'>Submit</button>
-      </fieldset>
+          </select><br>
+          <label for="">
+            Have you any knowledge about Sabaton?
+          </label><br>
+          <label for="hasKnowledge">
+            Yes
+          </label>
+          <input type='radio' name="hasKnowledge" checked><br>
+          <label for="hasMoreKnowledge">
+            Yes and not just any.
+          </label>
+          <input type='radio' name="hasMoreKnowledge"><br>
+          <label for="numberCheck">
+            Write the password on the picture.
+          </label><br>
+          <input type='password' value='' name="numberCheck"><br>
+          <label for="coments">
+            Any coments on the study?
+          </label><br>
+          <textarea rows="12" cols="20" value="" name="coments"></textarea><br>
+          <label for="submit">
+            Please check your answers before submiting.
+          </label><br>
+          <button type='submit'>Submit</button>
+        </fieldset>
+      </form>
     </main>
-    <footer>
+    <footer> <!--allmän bottentext-->
       made by Elias Olofsson
     </footer>
   </body>

@@ -1,32 +1,36 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
   <head>
 	<meta charset="utf-8">
-	<link href = "Style.css" rel = "stylesheet">
-	<title>Results-Elias webbsite about Sabaton</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href = "Style.css" rel = "stylesheet"> <!--kopplar htmldokumentet med CSS:en-->
+	<title>Results-Elias webbsite about Sabaton</title> <!--title gör så att texten står i fliken på sidan-->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--gör så att designen utgår från sidans storlek-->
   </head>
-  <body id="Results">
+  <body id="Results"> <!--id selektorn är gjord för att man ska kunna välja sidan man vill specielt designa i CSS:en-->
     <header>
-      <h1>
+      <h1> <!--huvudrubrik-->
         Elias webbsite about Sabaton
       </h1>
     </header>
+    <nav role="navigation"> <!--navigationsmeny med två listor med länkar till andra sidor och skriver ut deras namn-->
       <ul>
-        <nav>
-          <li><a href = "Index.html">Index</a></li>
-          <li><a href = "Bandmembers.html">Bandmembers</a></li>
-          <li><a href = "Music.html">Music</a></li>
-          <li><a href = "Study.html">Study</a></li>
-          <li><a href = "Results.html">Results</a></li>
-        </nav>
+        <li><a href = "Index.html">Index</a></li>
+        <li><a href = "Bandmembers.html">Bandmembers</a></li>
+        <li><a href = "Music.html">Music</a></li>
       </ul>
-      <main>
-      <p>
-        Since the study does not work there are no available results.
-      </p>
+      <ul>
+        <li><a href = "Study.html">Study</a></li>
+        <li><a href = "Results.html">Results</a></li>
+      </ul>
+    </nav>
+      <main role="main"> <!--själva innehållet på sidan-->
+        <p>
+          Since the study does not work there are no available results. Instead you can see the defence of moscow video.
+        </p>
+        <iframe width="420" height="345" src="https://www.youtube.com/embed/9TjXanLjpTU" title="defence of moscow"></iframe>
       </main>
-    <footer>
+    <footer> <!--allmän bottentext-->
       made by Elias Olofsson
     </footer>
   </body>

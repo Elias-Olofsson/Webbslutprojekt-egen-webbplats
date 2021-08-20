@@ -1,71 +1,74 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
   <head>
 	  <meta charset="utf-8">
-	  <link href = "Style.css" rel = "stylesheet">
-	  <title>Music-Elias webbsite about Sabaton</title>
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link href = "Style.css" rel = "stylesheet"> <!--kopplar htmldokumentet med CSS:en-->
+	  <title>Music-Elias webbsite about Sabaton</title> <!--title gör så att texten står i fliken på sidan-->
+	  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--gör så att designen utgår från sidans storlek-->
   </head>
-  <body id="Music">
+  <body id="Music"> <!--id selektorn är gjord för att man ska kunna välja sidan man vill specielt designa i CSS:en-->
     <header>
-      <h1>
+      <h1> <!--huvudrubrik-->
         Elias webbsite about Sabaton
       </h1>
     </header>
-    <ul>
-      <nav>
+    <nav role="navigation"> <!--navigationsmeny med två listor med länkar till andra sidor och skriver ut deras namn-->
+      <ul>
         <li><a href = "Index.html">Index</a></li>
         <li><a href = "Bandmembers.html">Bandmembers</a></li>
         <li><a href = "Music.html">Music</a></li>
+      </ul>
+      <ul>
         <li><a href = "Study.html">Study</a></li>
         <li><a href = "Results.html">Results</a></li>
-      </nav>
-    </ul>
-    <main>
+      </ul>
+    </nav>
+    <main role="main"> <!--själva innehållet på sidan-->
       <div>
-        <h2>
+        <h2> <!--underrubrik-->
           English songnames
         </h2>
         <dl>
-          <li>
+          <dt>
             1: the royal guard
-          </li>
-          <li>
+          </dt>
+          <dt>
             2: the lion from the north
-          </li>
+          </dt>
           <dt>
             3: gott mit uns
           </dt>
           <dd>
             "god with us" from german.
           </dd>
-          <li>
+          <dt>
             4: a lifetime of war
-          </li>
-          <li>
+          </dt>
+          <dt>
             5: 1648
-          </li>
-          <li>
+          </dt>
+          <dt>
             6: the carolean's prayer
-          </li>
+          </dt>
           <dt>
             7: carolus rex
           </dt>
           <dd>
             "king Karl" from latin and it is acosiated with Karl XII the king that the "long live the king" song is about.
           </dd>
-          <li>
+          <dt>
             8: killing ground
-          </li>
+          </dt>
           <dt>
             9: poltava
           </dt>
           <dd>
             A city in Ukraine.
           </dd>
-          <li>
+          <dt>
             10: long live the king
-          </li>
+          </dt>
           <dt>
             11: ruina imperii
           </dt>
@@ -75,10 +78,10 @@
         </dl>
       </div>
       <div>
-        <h2>
+        <h2> <!--underrubrik-->
           Swedish songnames and pronounciation
         </h2>
-        <ol>
+        <ol start="1">
           <li>
             livgardet
           </li>
@@ -115,7 +118,7 @@
         </ol>
       </div>
     </main>
-    <footer>
+    <footer> <!--allmän bottentext-->
       made by Elias Olofsson
     </footer>
   </body>

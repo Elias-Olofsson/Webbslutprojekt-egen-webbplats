@@ -1,27 +1,31 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
   <head>
 	  <meta charset="utf-8">
-	  <link href = "Style.css" rel = "stylesheet">
-	  <title>Bandmembers-Elias webbsite about Sabaton</title>
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link href = "Style.css" rel = "stylesheet"> <!--kopplar htmldokumentet med CSS:en-->
+	  <title>Bandmembers-Elias webbsite about Sabaton</title> <!--title gör så att texten står i fliken på sidan-->
+	  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--gör så att designen utgår från sidans storlek-->
   </head>
-  <body id="Bandmembers">
+  <body id="Bandmembers"> <!--id selektorn är gjord för att man ska kunna välja sidan man vill specielt designa i CSS:en-->
     <header>
-      <h1>
+      <h1> <!--huvudrubrik-->
         Elias webbsite about Sabaton
       </h1>
     </header>
-    <ul>
-      <nav>
-          <li><a href = "Index.html">Index</a></li>
-          <li><a href = "Bandmembers.html">Bandmembers</a></li>
-          <li><a href = "Music.html">Music</a></li>
-      </nav>
-    </ul>
-    <main>
+    <nav role="navigation"> <!--navigationsmeny med en lista med länkar till andra sidor och skriver ut deras namn-->
+      <ul>
+        <li><a href = "Index.html">Index</a></li>
+        <li><a href = "Bandmembers.html">Bandmembers</a></li>
+        <li><a href = "Music.html">Music</a></li>
+      </ul>
+    </nav>
+    <main role="main"> <!--själva innehållet på sidan-->
+      <h2>  <!--underrubriker-->
+        Current bandmembers table (2021)
+      </h2>
       <h2>
-        Current bandmembers (2021) table
+        Picture of the band (2016)
       </h2>
       <table>
         <thead>
@@ -100,8 +104,9 @@
           </tr>
         </tfoot>
       </table>
+      <img src="sabaton-band-2016.png" alt="picture of band members from 2016">
     </main>
-    <footer>
+    <footer> <!--allmän bottentext-->
       made by Elias Olofsson
     </footer>
   </body>

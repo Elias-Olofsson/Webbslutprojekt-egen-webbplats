@@ -15,14 +15,18 @@ header{
 }
 nav{
   background-color: grey;
-  display: grid;
-  margin: 0;
-  padding: 0;
   grid-area: nav;
   text-align: center;
-  grid-template-columns: 1fr 1fr 1fr;
+  
 }
-
+nav ul{
+  
+  margin: 0;
+  padding: 0;
+}
+nav li{
+  display: inline;
+}
 main{
   display: grid;
   margin: 0;
@@ -78,7 +82,7 @@ td{
   margin: 0;
 }
 tr:nth-child(odd){
-  background-color: darkgreen;
+  background-color: green;
 }
 tr:nth-child(even){
   background-color: grey;
@@ -91,18 +95,27 @@ ul{
   margin: 0;
   padding: 0;
 }
+video{
+  margin-top: 10px;
+}
 #Index{
-  background-color: green;
+  background-color: darkgreen;
 }
 #Bandmembers{
-  background-color: green;
+  background-color: darkgreen;
 }
 #Music{
-  background-color: green;
+  background-color: darkgreen;
 }
 #Study{
   background-color: blue;
 }
 #Results{
   background-color: lightyellow;
+}
+img{
+  width: 100%;
+}
+ul:first-child{
+  display: inline; /*funkar inte som jag vill*/
 }

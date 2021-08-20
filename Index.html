@@ -1,43 +1,49 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
   <head>
 	  <meta charset="utf-8">
-	  <link href = "Style.css" rel = "stylesheet">
-	  <title>Index-Elias webbsite about Sabaton</title>
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link href = "Style.css" rel = "stylesheet"> <!--kopplar htmldokumentet med CSS:en-->
+	  <title>Index-Elias webbsite about Sabaton</title> <!--title gör så att texten står i fliken på sidan-->
+	  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--gör så att designen utgår från sidans storlek-->
   </head>
-  <body id="Index">
+  <body id="Index"> <!--id selektorn är gjord för att man ska kunna välja sidan man vill specielt designa i CSS:en-->
     <header>
-      <h1>
+      <h1> <!--huvudrubrik-->
         Elias webbsite about Sabaton
       </h1>
     </header>
-    <ul>
-      <nav>
-        <li><a href = "Index.html">Index</a></li>
-        <li><a href = "Bandmembers.html">Bandmembers</a></li>
-        <li><a href = "Music.html">Music</a></li>
-      </nav>
-    </ul>
-    <main>
-      <h2>
+    <nav role="navigation"> <!--navigationsmeny med en lista med länkar till andra sidor och skriver ut deras namn-->
+      <ul class>
+        <li><a href="Index.html">Index</a></li>
+        <li><a href="Bandmembers.html">Bandmembers</a></li>
+        <li><a href="Music.html">Music</a></li>
+      </ul>
+    </nav>
+    <main role="main"> <!--själva innehållet på sidan-->
+      <h2> <!--underrubriker-->
         Introduction
       </h2>
       <h2>
         Content
       </h2>
-      <p>
+      <p> <!--textstycke-->
         Elias webbsite about Sabaton is the product of a schooltask in the spring 2021. To make the webbsite I used HTML and CSS
         with Caret on a cromebook. Because of the lack of any backside-programing the study does not work but every other page
         functions properly and I hope it will be usefull. Note that english is not my first language so the spelling might be flawed.
       </p>
-      <p>
+      <p> <!--textstycke-->
         The Bandmembers page contains some band history and a table with information about the bandmembers.
         The Music page contains the translation of the swedish song titles and their pronounciation.
         On the Music page one can go to the study and the result page that lack some features.
       </p>
+      <video width="320" height="240" controls> <!--bestämmer att det ska vara en video, storleken och att man ska kunna ha controll över den-->
+        <source src="greeting.mp4" type="video/mp4"> <!--bestämmer vilken video och beskriver typ av video det är-->
+        Your browser does not support the video tag. <!--texten som kommer upp om videon skulle saknas-->
+      </video>
+      <img src="sabaton.jpeg" alt="picture of the band on stage"> <!--visar bilden om bilden inte visas så ser man texten i alt-->
     </main>
-    <footer>
+    <footer> <!--allmän bottentext-->
       made by Elias Olofsson
     </footer>
   </body>
