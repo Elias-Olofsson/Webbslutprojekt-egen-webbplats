@@ -98,6 +98,10 @@ ul{
 video{
   margin-top: 10px;
 }
+audio{
+  height: 16px;
+  width: 300px;
+}
 #Index{
   background-color: darkgreen;
 }
