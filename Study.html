@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!--gör så att det är lätt att hitta vad för typ av dokument detta är-->
+<html lang="en"> <!--börjar html sidan och väljer språket för att webbläsarna ska kunna läsa upp texten i rätt språk-->
 
-  <head>
-	  <meta charset="utf-8">
+  <head> <!--här är allt som man inte ser i rutan för sidan som inte är med i CSS:en eller bara är onödigt eller för att koppla grejer till CSS:en-->
+	  <meta charset="utf-8"> <!--bestämmer vilken teckenkodning som ska användas så att webbläsaren skriver ut rätt för ord med bokstäver från andra språk-->
 	  <link href = "Style.css" rel = "stylesheet"> <!--kopplar htmldokumentet med CSS:en-->
 	  <title>Study-Elias webbsite about Sabaton</title> <!--title gör så att texten står i fliken på sidan-->
 	  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--gör så att designen utgår från sidans storlek-->
     </head>
   <body id="Study"> <!--id selektorn är gjord för att man ska kunna välja sidan man vill specielt designa i CSS:en-->
-    <header>
+    <header> <!--det som ska vara längst upp som huvudrubriken-->
       <h1> <!--huvudrubrik-->
         Elias webbsite about Sabaton
       </h1>
@@ -25,22 +25,22 @@
       </ul>
     </nav>
     <main role="main"> <!--själva innehållet på sidan-->
-      <form>
-       <fieldset>
-          <legend>
+      <form> <!--skapar ett formulär-->
+       <fieldset> <!--skapar ett fält för formulärfrågor-->
+          <legend> <!--speciel text-->
             The study does not take in the results in the current version.
           </legend>
-          <label for="favourite">
+          <label for="favourite"> <!--namngivning så att backenden skulle kunna använda vissa av frågorna-->
             What is your favourite Sabaton song?
           </label>
-          <input type='text' value='' name="favourite">
-          <p>
+          <input type='text' value='' name="favourite"> <!--skapar en tom textruta där man kan skriva-->
+          <p> <!--vanligt textstycke-->
             Which of these songs are you familiar with?
           </p>
           <label for="wingedHussars">
             winged hussars
           </label>
-          <input type='checkbox' value="" name="wingedHussars"><br>
+          <input type='checkbox' value="" name="wingedHussars"><br> <!--skapar en ruta som man kan trycka på för att sätta ett märke i och br byter rad-->
           <label for="heartsOfIron">
             hearts of iron
           </label>
@@ -60,49 +60,49 @@
           <label for="potentialFake">
             Wich one of those were made up and are not Sabaton songs?
           </label><br>
-          <select name="potentialFake">
-          <option value="pf1">
-            winged hussars
-          </option>
-          <option value="pf2">
-            hearts of iron
-          </option>
-          <option value="pf3">
-            a lifetime of war
-          </option>
-          <option value="pf4">
-            en livstid i krig
-          </option>
-          <option value="pf5">
-            ruina imperii
-          </option>
-          <option value="pf6">
-            no one
-          </option>
+          <select name="potentialFake"> <!--gör en ruta där du kan välja bland alternativ-->
+            <option value="pf1"> <!--gör alternativ till en select-->
+              winged hussars
+            </option>
+            <option value="pf2">
+              hearts of iron
+            </option>
+            <option value="pf3">
+              a lifetime of war
+            </option>
+            <option value="pf4">
+              en livstid i krig
+            </option>
+            <option value="pf5">
+              ruina imperii
+            </option>
+            <option value="pf6">
+              no one
+            </option>
           </select><br>
-          <label for="">
+          <label for="knowledge">
             Have you any knowledge about Sabaton?
           </label><br>
           <label for="hasKnowledge">
             Yes
           </label>
-          <input type='radio' name="hasKnowledge" checked><br>
+          <input type='radio' name="hasKnowledge" checked><br> <!--gör en cirkel som är ifyld -->
           <label for="hasMoreKnowledge">
             Yes and not just any.
           </label>
-          <input type='radio' name="hasMoreKnowledge"><br>
+          <input type='radio' name="hasMoreKnowledge"><br> <!--gör en cirlkel som inte är ifyld-->
           <label for="numberCheck">
             Write the password on the picture.
           </label><br>
-          <input type='password' value='' name="numberCheck"><br>
+          <input type='password' value='' name="numberCheck"><br> <!--gör en ruta som gömmer det man skriver i den-->
           <label for="coments">
             Any coments on the study?
           </label><br>
-          <textarea rows="12" cols="20" value="" name="coments"></textarea><br>
+          <textarea rows="12" cols="20" value="" name="coments"></textarea><br> <!--gör stor textruta man kan skriva i-->
           <label for="submit">
             Please check your answers before submiting.
           </label><br>
-          <button type='submit'>Submit</button>
+          <button type='submit'>Submit</button> <!--gör en skicka in knapp som skickar in allt man fyllt i-->
         </fieldset>
       </form>
     </main>

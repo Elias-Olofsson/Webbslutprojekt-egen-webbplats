@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!--gör så att det är lätt att hitta vad för typ av dokument detta är-->
+<html lang="en"> <!--börjar html sidan och väljer språket för att webbläsarna ska kunna läsa upp texten i rätt språk-->
 
-  <head>
-	  <meta charset="utf-8">
+  <head> <!--här är allt som man inte ser i rutan för sidan som inte är med i CSS:en eller bara är onödigt eller för att koppla grejer till CSS:en-->
+	  <meta charset="utf-8"> <!--bestämmer vilken teckenkodning som ska användas så att webbläsaren skriver ut rätt för ord med bokstäver från andra språk-->
 	  <link href = "Style.css" rel = "stylesheet"> <!--kopplar htmldokumentet med CSS:en-->
 	  <title>Music-Elias webbsite about Sabaton</title> <!--title gör så att texten står i fliken på sidan-->
 	  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--gör så att designen utgår från sidans storlek-->
   </head>
   <body id="Music"> <!--id selektorn är gjord för att man ska kunna välja sidan man vill specielt designa i CSS:en-->
-    <header>
+    <header> <!--det som ska vara längst upp som huvudrubriken-->
       <h1> <!--huvudrubrik-->
         Elias webbsite about Sabaton
       </h1>
@@ -25,12 +25,12 @@
       </ul>
     </nav>
     <main role="main"> <!--själva innehållet på sidan-->
-      <div>
+      <div> <!--div gör den delen till en egen grupp man kan säga att den delar in det i den-->
         <h2> <!--underrubrik-->
           English songnames
         </h2>
-        <dl>
-          <dt>
+        <dl> <!--gör en beskrivningslista-->
+          <dt> <!--texten i en beskrivningslista som kan bli beskriven-->
             1: the royal guard
           </dt>
           <dt>
@@ -39,7 +39,7 @@
           <dt>
             3: gott mit uns
           </dt>
-          <dd>
+          <dd>  <!--beskrivning-->
             "god with us" from german.
           </dd>
           <dt>
@@ -81,11 +81,11 @@
         <h2> <!--underrubrik-->
           Swedish songnames and pronounciation
         </h2>
-        <ol start="1">
-          <li>
+        <ol start="1"> <!--en lista som skriver ut ordningen på texterna och börjar med text nr 1 istället för 0-->
+          <li> <!--innehåll i en lista-->
             livgardet
-            <br>
-            <audio controls>
+            <br> <!--radbyte-->
+            <audio controls> <!--skapar knapp, tidsbeskrivning och tidsbestämmande plutt på tjockt sträck för att man ska kunna kontrollera ett ljudklipp och i den har jag vilket sorts ljudklipp och länk till det-->
               <source src="" type="audio/">
             </audio>
           </li>
