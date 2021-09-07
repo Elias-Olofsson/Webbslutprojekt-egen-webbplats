@@ -26,6 +26,7 @@ nav ul{
 }
 nav li{
   display: inline; /*bestämmer var i relation till resten den ska vara och navigationlistan ska vara i en linje så att de inte hamnar på varandra*/
+    margin: 125px; /*ökar mellanrummet på bredden mellan dem*/
 }
 main{
   display: grid;
@@ -66,12 +67,13 @@ p{
 }
 table{
   border: 1px solid black;
+  background-color: darkgrey;
   border-spacing: 0px;
   border-radius: 15px; /*gör så att tabellen får rundade hörn*/
   padding: 5px;
 }
 th{
-  background-color: grey; /*gulgrön*/
+  background-color: grey;
   border: 1px solid black;
 }
 td{
@@ -85,7 +87,7 @@ tr:nth-child(odd){ /*gör så att varrannan inkl den första raden får grön ba
   background-color: green;
 }
 tr:nth-child(even){ /*gör så att varrannan inte inkl den första raden får grå bakgrund*/
-  background-color: #66AA00;
+  background-color: #66AA00; /*gulgrön*/
 }
 dl{
   list-style-type: none; /*tar bort försatta stilar på listan*/

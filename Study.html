@@ -14,12 +14,12 @@
       </h1>
     </header>
     <nav role="navigation"> <!--navigationsmeny med två listor med länkar till andra sidor och skriver ut deras namn-->
-      <ul>
-        <li><a href = "Index.html">Index</a></li>
-        <li><a href = "Bandmembers.html">Bandmembers</a></li>
-        <li><a href = "Music.html">Music</a></li>
+      <ul class>
+        <li><a href="Index.html">Index</a></li>
+        <li><a href="Bandmembers.html">Bandmembers</a></li>
+        <li><a href="Music.html">Music</a></li>
       </ul>
-      <ul> <!--Man ska lätt kunna navigera mellan allt som har med musiken att göra så jag har med länkarna här med-->
+      <ul> <!--man ska lätt kunna navigera mellan allt som har med musiken att göra så jag har med länkarna här med-->
         <li><a href = "Study.html">Study</a></li>
         <li><a href = "Results.html">Results</a></li>
       </ul>
@@ -91,10 +91,18 @@
             Yes and not just any.
           </label>
           <input type='radio' name="hasMoreKnowledge"><br> <!--gör en cirlkel som inte är ifylld-->
+          <label for="numberOfBandmembers">
+            How manny bandmembers does Sabaton have?
+          </label><br>
+          <input type="number" name="numberOfBandmembers"><br> <!--tillåter endast tal-->
           <label for="numberCheck">
             Write the password on the picture.
           </label><br>
           <input type='password' value='' name="numberCheck"><br> <!--gör en ruta som gömmer det man skriver i den-->
+          <label for="hiddenTest">
+            Can you find the hidden input field?
+          </label><br>
+          <input type="hidden" value="yes if you see this" name="hiddenTest"><br> <!--gör ett fält man inte kan se på sidan men man kan hitta det som står i value om man "Inspekterar" sidan-->
           <label for="coments">
             Any coments on the study?
           </label><br>
@@ -102,7 +110,7 @@
           <label for="submit">
             Please check your answers before submiting.
           </label><br>
-          <button type='submit'>Submit</button> <!--gör en skicka in knapp som skickar in allt man fyllt i-->
+          <button type='submit'>Submit</button> <!--gör en skicka in knapp som skulle kunna skicka in allt man fyllt i-->
         </fieldset>
       </form>
     </main>
