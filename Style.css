@@ -17,7 +17,6 @@ nav{
   background-color: grey;
   grid-area: nav;
   text-align: center;
-  
 }
 nav ul{
   
@@ -27,6 +26,9 @@ nav ul{
 nav li{
   display: inline; /*bestämmer var i relation till resten den ska vara och navigationlistan ska vara i en linje så att de inte hamnar på varandra*/
     margin: 125px; /*ökar mellanrummet på bredden mellan dem*/
+}
+.undermeny{ /*tekniska förklaringen för varför jag har denna klassen här är att den andra lösningen jag använt innan vilket är nth-child räknade med bilder som p-stycken då den verkade vara felaktig så då går jag på det säkra valet av en klass istället*/
+  margin: 295px;
 }
 main{
   display: grid;
@@ -104,6 +106,9 @@ audio{
   height: 16px; /*gör så att de får ungefär samma höjd som texten så att det lätt går att se alla samtidigt och man fortfarande kan läsa tiden*/
   width: 300px;
 }
+img{
+  width: 100%;
+}
 #Index{
   background-color: darkgreen;
 }
@@ -118,9 +123,6 @@ audio{
 }
 #Results{
   background-color: hsl(50, 100%, 87%); /*sandfärgad*/
-}
-img{
-  width: 100%;
 }
 @media only screen and (max-width: 700px) {audio {width: 130px;}}
 @media only screen and (orientation: portrait) {#Study {background-image: linear-gradient(to right, rgb(120, 165, 240), red);}}
