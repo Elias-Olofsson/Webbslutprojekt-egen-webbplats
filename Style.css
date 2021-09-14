@@ -89,7 +89,7 @@ tr:nth-child(odd){ /*gör så att varrannan inkl den första raden får grön ba
   background-color: green;
 }
 tr:nth-child(even){ /*gör så att varrannan inte inkl den första raden får grå bakgrund*/
-  background-color: #66AA00; /*gulgrön*/
+  background-color: #66AA00; /*gulgrön eller ljusgrön*/
 }
 dl{
   list-style-type: none; /*tar bort försatta stilar på listan*/
@@ -100,10 +100,10 @@ ul{
   padding: 0;
 }
 video{
-  margin-top: 10px; /*gör ett litet mellanrum så att texten blir lättare att se*/
+  margin-top: 3ex; /*gör ett mellanrum så att texten blir lättare att se melanrummet är ungefär 1.5 gånger så stor som höjden på texten*/
 }
 audio{
-  height: 16px; /*gör så att de får ungefär samma höjd som texten så att det lätt går att se alla samtidigt och man fortfarande kan läsa tiden*/
+  height: 1em; /*gör så att de får samma höjd som texten så att det lätt går att se alla samtidigt och man fortfarande kan läsa tiden*/
   width: 300px;
 }
 img{
@@ -118,11 +118,15 @@ img{
 #Music{
   background-color: darkgreen;
 }
+#Music main{
+  grid-template-columns: 1fr 1fr 1fr; /*delar upp sidan i en trespaltslayout och lägger in divarna i ordning*/
+}
 #Study{
   background-image: linear-gradient(rgb(120, 165, 240), red); /*blå som blir rödare uppifrån ner*/
 }
 #Results{
   background-color: hsl(50, 100%, 87%); /*sandfärgad*/
 }
-@media only screen and (max-width: 700px) {audio {width: 130px;}}
+@media only screen and (max-width: 700px) {audio {width: 130px;}} /*om skärmen är mindre än 700 pixlar så minskar ljudkontrollerna i bredd till 130 pixlar*/
 @media only screen and (orientation: portrait) {#Study {background-image: linear-gradient(to right, rgb(120, 165, 240), red);}}
+/*ändrar håll sidans färger visar på så att man får illusionen av att bakgrunden följer med när man vänder mobilen eller plattan på sidan och går från porträtt till horisontel skärm*/
