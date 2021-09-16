@@ -30,37 +30,37 @@
           <legend> <!--speciel text-->
             The study does not take in the results in the current version.
           </legend>
-          <label for="favourite"> <!--namngivning så att backenden skulle kunna använda vissa av frågorna-->
+          <label for="favourite"> <!--visar vilken input den hör till-->
             What is your favourite Sabaton song?
           </label>
-          <input type='text' value='' name="favourite"> <!--skapar en tom textruta där man kan skriva-->
+          <input type='text' id="favourite" name="favourite"> <!--skapar en tom textruta där man kan skriva, id som visar vilken label som tillhör den och namngivning så att backenden skulle kunna använda vissa av frågorna-->
           <p> <!--vanligt textstycke-->
             Which of these songs are you familiar with?
           </p>
           <label for="wingedHussars">
             winged hussars
           </label>
-          <input type='checkbox' value="" name="wingedHussars"><br> <!--skapar en ruta som man kan trycka på för att sätta ett märke i och br byter rad-->
+          <input type='checkbox' value="selected" id="wingedHussars" name="wingedHussars"><br> <!--skapar en ruta som man kan trycka på för att sätta ett märke i och br byter rad-->
           <label for="heartsOfIron">
             hearts of iron
           </label>
-          <input type='checkbox' value="" name="heartsOfIron"><br>
+          <input type='checkbox' value="selected" id="heartsOfIron" name="heartsOfIron"><br>
           <label for="aLifetimeOfẂar">
             a lifetime of war
           </label>
-          <input type='checkbox' value="" name="aLifetimeOfẂar"><br>
+          <input type='checkbox' value="selected" id="aLifetimeOfẂar" name="aLifetimeOfẂar"><br>
           <label for="enLivstidIKrig">
             en livstid i krig
           </label>
-          <input type='checkbox' value="" name="enLivstidIKrig"><br>
+          <input type='checkbox' value="selected" id="enLivstidIKrig" name="enLivstidIKrig"><br>
           <label for="ruinaImperii">
             ruina imperii
           </label>
-          <input type='checkbox' value="" name="ruinaImperii"><br>
+          <input type='checkbox' value="selected" id="ruinaImperii" name="ruinaImperii"><br>
           <label for="potentialFake">
             Wich one of those were made up and are not Sabaton songs?
           </label><br>
-          <select name="potentialFake"> <!--gör en ruta där du kan välja bland alternativ-->
+          <select id="potentialFake" name="potentialFake"> <!--gör en ruta där du kan välja bland alternativ-->
             <option value="pf1"> <!--gör alternativ till en select-->
               winged hussars
             </option>
@@ -80,37 +80,38 @@
               no one
             </option>
           </select><br>
-          <label for="knowledge">
+          <p> <!--verkade inte få vara label för hasKnowledge då den labeln med yes precis under har for="hasKnowledge"-->
             Have you any knowledge about Sabaton?
-          </label><br>
+          </p><br>
           <label for="hasKnowledge">
             Yes
           </label>
-          <input type='radio' name="hasKnowledge" checked><br> <!--gör en cirkel som är ifylld-->
+          <input type='radio' value="preSelected" id="hasKnowledge" name="hasKnowledge" checked><br> <!--gör en cirkel som är ifylld-->
           <label for="hasMoreKnowledge">
             Yes and not just any.
           </label>
-          <input type='radio' name="hasMoreKnowledge"><br> <!--gör en cirlkel som inte är ifylld-->
+          <input type='radio' value="selected" id="hasMoreKnowledge" name="hasMoreKnowledge"><br> <!--gör en cirlkel som inte är ifylld-->
           <label for="numberOfBandmembers">
             How manny bandmembers does Sabaton have?
           </label><br>
-          <input type="number" name="numberOfBandmembers"><br> <!--tillåter endast tal-->
+          <input type="number" id="numberOfBandmembers" name="numberOfBandmembers"><br> <!--tillåter endast tal-->
+          <img src="password.svg" alt="The picture failed to show itself and it showed the numbers that are one more then 44, 15, 42 and 21"><br>
           <label for="numberCheck">
-            Write the password on the picture.
+            Write the numbers over this text.
           </label><br>
-          <input type='password' value='' name="numberCheck"><br> <!--gör en ruta som gömmer det man skriver i den-->
-          <label for="hiddenTest">
+          <input type='password' id="numberCheck" name="numberCheck"><br> <!--gör en ruta som gömmer det man skriver i den-->
+          <p> <!--fick inte vara label till hiddentest då input:en är av typen hidden enligt validatorn-->
             Can you find the hidden input field?
-          </label><br>
-          <input type="hidden" value="yes if you see this" name="hiddenTest"><br> <!--gör ett fält man inte kan se på sidan men man kan hitta det som står i value om man "Inspekterar" sidan-->
+          </p><br>
+          <input type="hidden" value="yes if you see this" id="hiddenTest" name="hiddenTest"><br> <!--gör ett fält man inte kan se på sidan men man kan hitta det som står i value om man "Inspekterar" sidan-->
           <label for="coments">
             Any coments on the study?
           </label><br>
-          <textarea rows="12" cols="20" value="" name="coments"></textarea><br> <!--gör stor textruta man kan skriva i-->
+          <textarea rows="12" cols="20" id="coments" name="coments"></textarea><br> <!--gör stor textruta man kan skriva i-->
           <label for="submit">
             Please check your answers before submiting.
           </label><br>
-          <button type='submit'>Submit</button> <!--gör en skicka in knapp som skulle kunna skicka in allt man fyllt i-->
+          <button type='submit' id="submit">Submit</button> <!--gör en skicka in knapp som skulle kunna skicka in allt man fyllt i-->
         </fieldset>
       </form>
     </main>

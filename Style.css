@@ -109,6 +109,9 @@ audio{
 img{
   width: 100%;
 }
+#Study img{ /*påverkar endast bilden talen och gör så att de inte täcker halva sidan och inte sticker ut höger om gränsen för textrutorna över och under*/
+  width: 30%;
+}
 #Index{
   background-color: darkgreen;
 }
