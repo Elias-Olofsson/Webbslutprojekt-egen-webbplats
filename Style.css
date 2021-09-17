@@ -30,6 +30,25 @@ nav li{
 .undermeny{ /*tekniska förklaringen för varför jag har denna klassen här är att den andra lösningen jag använt innan vilket är nth-child räknade med bilder som p-stycken då den verkade vara felaktig så då går jag på det säkra valet av en klass istället*/
   margin: 295px;
 }
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: red;
+}
+
+a:focus {
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: yellow;
+}
 main{
   display: grid;
   margin: 0;
@@ -109,6 +128,9 @@ audio{
 img{
   width: 100%;
 }
+label[for="numberCheck"]{ /*markerar texten till den enda nödvändiga frågan*/
+  background-color: yellow;
+}
 #Study img{ /*påverkar endast bilden talen och gör så att de inte täcker halva sidan och inte sticker ut höger om gränsen för textrutorna över och under*/
   width: 30%;
 }
@@ -121,7 +143,7 @@ img{
 #Music{
   background-color: darkgreen;
 }
-#Music main{
+#Music > main{
   grid-template-columns: 1fr 1fr 1fr; /*delar upp sidan i en trespaltslayout och lägger in divarna i ordning*/
 }
 #Study{

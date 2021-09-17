@@ -25,7 +25,7 @@
       </ul>
     </nav>
     <main role="main"> <!--själva innehållet på sidan-->
-      <form> <!--skapar ett formulär-->
+      <form action="Results.html" method="get"> <!--skapar ett formulär där submit gör så man kommer till Results om den skulle submittats men då den inte gör det så öppnar den ett felmedelande i en ny flik tack vare target-->
        <fieldset> <!--skapar ett fält för formulärfrågor-->
           <legend> <!--speciel text-->
             The study does not take in the results in the current version.
@@ -58,10 +58,10 @@
           </label>
           <input type='checkbox' value="selected" id="ruinaImperii" name="ruinaImperii"><br>
           <label for="potentialFake">
-            Wich one of those were made up and are not Sabaton songs?
+            Wich one of these were made up and are not Sabaton songs?
           </label><br>
           <select id="potentialFake" name="potentialFake"> <!--gör en ruta där du kan välja bland alternativ-->
-            <option value="pf1"> <!--gör alternativ till en select-->
+            <option value="pf1" selected> <!--gör alternativ till en select och gör att den börjar med winged hussars även om ordningen skulle ändras-->
               winged hussars
             </option>
             <option value="pf2">
@@ -90,7 +90,7 @@
           <label for="hasMoreKnowledge">
             Yes and not just any.
           </label>
-          <input type='radio' value="selected" id="hasMoreKnowledge" name="hasMoreKnowledge"><br> <!--gör en cirlkel som inte är ifylld-->
+          <input type='radio' value="selected" id="hasMoreKnowledge" name="hasKnowledge"><br> <!--gör en cirlkel som inte är ifylld-->
           <label for="numberOfBandmembers">
             How manny bandmembers does Sabaton have?
           </label><br>
@@ -99,7 +99,7 @@
           <label for="numberCheck">
             Write the numbers over this text.
           </label><br>
-          <input type='password' id="numberCheck" name="numberCheck"><br> <!--gör en ruta som gömmer det man skriver i den-->
+          <input type='password' id="numberCheck" name="numberCheck" required><br> <!--gör en ruta som gömmer det man skriver i den-->
           <p> <!--fick inte vara label till hiddentest då input:en är av typen hidden enligt validatorn-->
             Can you find the hidden input field?
           </p><br>
