@@ -3,7 +3,7 @@ body{
   grid-template-rows: 50px 50px auto 18px; /*gör plats för huvudrubriken, naven, innehållet och footern*/
   grid-gap: 0; /*tar bort eventuella försatta luckor*/
   padding: 0; /*tar bort eventuel försatt padding*/
-  grid-template-areas: "header" "nav" "main" "footer"; /*gör så att t.ex naven alltid hamnar näst längst upp automatiskt för att den är nav*/
+  grid-template-areas: "header" "nav" "main" "footer"; /*gör så att t.ex naven alltid hamnar näst längst upp automatiskt för att den är näst längst till vänster och kommer på andra plats*/
 }
 header{
   background-color: grey;
